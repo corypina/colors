@@ -1,0 +1,62 @@
+#main {
+    width: 100%;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.colorCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: rgb(217, 215, 215);
+    width: 20%;
+    height: 100vh;
+}
+
+.colContent {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colorPicker {
+    width: 50%;
+    align-self: center;
+}
+
+input {
+    padding: 8px 12px;
+    text-align: center;
+    border: 0;
+    border-radius: 50px;
+    color: #2a2a2a;
+    background: rgba(255, 255, 255, .4);
+}
+
+#util {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+}
+
+#util span {
+    cursor: pointer;
+    display: block;
+    background: rgba(255, 255, 255, .4);
+    padding: 8px 15px 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .colorCol {
+        width: 100%;
+        height: 20vh;
+    }
+}
